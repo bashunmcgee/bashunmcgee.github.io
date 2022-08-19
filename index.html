@@ -21,13 +21,23 @@
     <a class="nav-link" href="#">Bottom</a>
   </li>
 </ul>
+        <h4>  To My first Hello World! 
+      
+      
+    </h4>
+    <p> Welcome To My Github account this a basic page and its purpose is to display somethings of what I have learned with software developement</p>
+
 
 
 
 
   
     
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"> d3.select("body")
+  .selectAll("p")
+  .data([4, 8, 15, 16, 23, 42])
+  .enter().append("p")
+    .text(function(d) { return "I’m number " + d + "!"; });</script>
   <script>
     </script>
      
