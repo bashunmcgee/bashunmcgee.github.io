@@ -29,7 +29,7 @@ function playRound(playerChoice) {
 
 let computerChoice = computerPlay();
 
-let result = ""
+let scoreCard = ""
 
   if((playerChoice  == 'Rock' && computerChoice == 'Scissors')||
       (playerChoice == 'Scissors' && computerChoice == 'Paper')||
@@ -46,15 +46,17 @@ let result = ""
     }
 
 }
-else if (playerChoice == computerChoice){
-  scoreCard += ("<br> It\'s a tie. You both chose " + playerSelection
+else if ((playerChoice  == 'Rock' && computerChoice == 'Rock')||
+    (playerChoice == 'Scissors' && computerChoice == 'Scissors')||
+    (playerChoice == 'Paper' && computerChoice == 'Paper')){
+  scoreCard = ("<br> Its a tie. You both chose " + playerSelection
          + "<br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
 }
 
 else {
 
   computerScore += 1
-  scoreCard += ("<br> You Lose! " + computerChoice +  " Beats "+ playerChoice + " <br>Computer Score : " + computerScore + " <br>Player Score : " + playerScore );
+  scoreCard = ("<br><br> You Lose! " + computerChoice +  " Beats "+ playerChoice + " <br>Computer Score : " + computerScore + " <br>Player Score : " + playerScore );
 
   if(computerScore == 7){
     scoreCard += "<br> <br>Bots Rule The World Lets Play Again!"
