@@ -36,7 +36,7 @@ let result = ""
       (playerChoice == 'Paper' && computerChoice == 'Rock'))
   {
     playerScore += 1;
-    scoreCard = (" You Win Congrats! " + playerChoice + " Beats " + computerChoice + " everytime! " + "<br><br><br><br> "
+    scoreCard += (" You Win Congrats! " + playerChoice + " Beats " + computerChoice + " everytime! " + "<br><br><br><br> "
     + "<br> Computer Score : " + computerScore + "<br> Player Score : " + playerScore);
 
 
@@ -54,7 +54,7 @@ else if (playerChoice == computerChoice){
 else {
 
   computerScore += 1
-  scoreCard += ("You Lose! <br>Computer Score : " + computerScore + " <br>Player Score : " + playerScore );
+  scoreCard += ("You Lose! "+ computerChoice + " Beats "+ playerChoice + "<br>Computer Score : " + computerScore + " <br>Player Score : " + playerScore );
 
   if(computerScore == 7){
     scoreCard += "<br> <br>Bots Rule The World Lets Play Again!"
