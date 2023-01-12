@@ -9,6 +9,12 @@ function disableButtons() {
     })
 }
 
+// Allows the computer to randomly Choose between Rock, Paper, or Scissors
+function computerPlay() {
+    let choices = ['Rock', 'Paper', 'Scissors']
+    return choices[Math.floor(Math.random() * choices.length)]
+}
+
 
 // For Each button adds event listener To Call Play Round
 buttons.forEach(button => {
@@ -46,9 +52,7 @@ let scoreCard = ""
     }
 
 }
-else if ((playerChoice  == 'Rock' && computerChoice == 'Rock')||
-    (playerChoice == 'Scissors' && computerChoice == 'Scissors')||
-    (playerChoice == 'Paper' && computerChoice == 'Paper')){
+else if (playerChoice == computerChoice){
   scoreCard = ("<br> Its a tie. You both chose " + playerSelection
          + "<br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
 }
@@ -68,11 +72,4 @@ else {
 document.getElementById('scoreCard').innerHTML = scoreCard
   return
 
-}
-
-
-// Allows the computer to randomly Choose between Rock, Paper, or Scissors
-function computerPlay() {
-    let choices = ['Rock', 'Paper', 'Scissors']
-    return choices[Math.floor(Math.random() * choices.length)]
 }
