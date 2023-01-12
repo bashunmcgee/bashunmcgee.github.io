@@ -54,7 +54,7 @@ else if (playerChoice == computerChoice){
 else {
 
   computerScore += 1
-  scoreCard = ("You Lose! " + computerChoice +  " Beats "+ playerChoice + " <br>Computer Score : " + computerScore + " <br>Player Score : " + playerScore );
+  scoreCard += ("You Lose! " + computerChoice +  " Beats "+ playerChoice + " <br>Computer Score : " + computerScore + " <br>Player Score : " + playerScore );
 
   if(computerScore == 7){
     scoreCard += "<br> <br>Bots Rule The World Lets Play Again!"
