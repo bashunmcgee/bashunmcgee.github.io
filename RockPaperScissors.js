@@ -47,14 +47,14 @@ let result = ""
 
 }
 else if (playerChoice == computerChoice){
-  scoreCard = ('It\'s a tie. You both chose (' + playerSelection + ")"
+  scoreCard += ('It\'s a tie. You both chose (' + playerSelection + ")"
          + "<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
 }
 
 else {
 
   computerScore += 1
-  scoreCard = ("You Lose! <br>Computer Score : " + computerScore + " <br>Player Score : " + playerScore );
+  scoreCard += ("You Lose! <br>Computer Score : " + computerScore + " <br>Player Score : " + playerScore );
 
   if(computerScore == 7){
     scoreCard += "<br> <br>Bots Rule The World Lets Play Again!"
