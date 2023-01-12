@@ -47,8 +47,8 @@ let result = ""
 
 }
 else if (playerChoice == computerChoice){
-  scoreCard = ("It\'s a tie. You both chose " + playerSelection
-         + "<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
+  scoreCard += ("<br> It\'s a tie. You both chose " + playerSelection
+         + "<br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
 }
 
 else {
