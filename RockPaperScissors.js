@@ -11,7 +11,7 @@ function disableButtons() {
 
 // Allows the computer to randomly Choose between Rock, Paper, or Scissors
 function computerPlay() {
-    let choices = ['Rock', 'Paper', 'Scissors']
+    let choices = ['rock', 'paper', 'scissors']
     return choices[Math.floor(Math.random() * choices.length)]
 }
 
@@ -37,9 +37,9 @@ let computerChoice = computerPlay();
 
 let scoreCard = ""
 
-  if((playerChoice  == 'Rock' && computerChoice == 'Scissors')||
-      (playerChoice == 'Scissors' && computerChoice == 'Paper')||
-      (playerChoice == 'Paper' && computerChoice == 'Rock'))
+  if((playerChoice  == 'rock' && computerChoice == 'scissors')||
+      (playerChoice == 'scissors' && computerChoice == 'paper')||
+      (playerChoice == 'paper' && computerChoice == 'rock'))
   {
     playerScore += 1;
     scoreCard = (" You Win Congrats! " + playerChoice + " Beats " + computerChoice + " everytime! " + "<br>"
@@ -52,20 +52,27 @@ let scoreCard = ""
     }
 
 }
-else if (playerChoice == computerChoice){
-  scoreCard = ("<br> Its a tie. You both chose " + playerSelection
-         + "<br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
-}
+else if ((playerChoice == 'rock' && computerChoice  == 'paper') ||
+        (playerChoice == 'scissors' && computerChoice  == 'rock') ||
+        (playerChoice == 'paper' && computerChoice == 'scissors')){
+
+          computerScore += 1
+
+
+          scoreCard = ("<br><br> You Lose! " + computerChoice +  " Beats "+ playerChoice + " <br>Computer Score : " + computerScore + " <br>Player Score : " + playerScore );
+
+          if(computerScore == 7){
+            scoreCard += "<br> <br>Bots Rule The World Lets Play Again!"
+            disableButtons()
+          }
+
+  }
 
 else {
 
-  computerScore += 1
-  scoreCard = ("<br><br> You Lose! " + computerChoice +  " Beats "+ playerChoice + " <br>Computer Score : " + computerScore + " <br>Player Score : " + playerScore );
 
-  if(computerScore == 7){
-    scoreCard += "<br> <br>Bots Rule The World Lets Play Again!"
-    disableButtons()
-  }
+  scoreCard = ( "<br>Computer and Human have Chose The same option? Its a Draw. <br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
+
 
 }
 
