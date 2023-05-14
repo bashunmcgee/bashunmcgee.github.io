@@ -14,7 +14,7 @@ function computerPlay() {
 const choices = 3;
 const choice = Math.floor(Math.random() * choices)) + 1
     
-   
+   return choice;
 }
 
 
