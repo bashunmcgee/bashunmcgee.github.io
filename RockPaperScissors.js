@@ -11,8 +11,8 @@ function disableButtons() {
 
 // Allows the computer to randomly Choose between Rock, Paper, or Scissors
 function computerPlay() {
-    let choices = ['rock', 'paper', 'scissors']
-    return [Math.floor(Math.random() * choices.length)]
+const choices = 3;
+const choice = Math.floor(Math.random() * choices)) + 1
     
    
 }
@@ -22,8 +22,8 @@ function computerPlay() {
 buttons.forEach(button => {
     button.addEventListener('click', function(){
         playRound(button.value)
-    })
-})
+    });
+});
 
 
 //Plays Actual Round of Game
