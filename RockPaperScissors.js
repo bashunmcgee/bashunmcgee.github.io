@@ -26,11 +26,6 @@ buttons.forEach(button => {
 })
 
 
-
-
-
-
-
 //Plays Actual Round of Game
 
 function playRound(playerChoice) {
@@ -78,7 +73,7 @@ else {
 
 }
 
-document.getElementById('scoreCard').innerHTML = scoreCard
-  return
+return document.getElementById('scoreCard').innerHTML = scoreCard
+  
 
 }
