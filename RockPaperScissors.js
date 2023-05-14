@@ -37,9 +37,9 @@ let computerChoice = computerPlay();
 
 let scoreCard = ""
 
-  if((playerChoice  == 'rock' && computerChoice == 'scissors')||
-      (playerChoice == 'scissors' && computerChoice == 'paper')||
-      (playerChoice == 'paper' && computerChoice == 'rock'))
+  if((playerChoice  == 'Rock' && computerChoice == 'Scissors')||
+      (playerChoice == 'Scissors' && computerChoice == 'Paper')||
+      (playerChoice == 'Paper' && computerChoice == 'Rock'))
   {
     playerScore += 1;
     scoreCard = (" You Win Congrats! " + playerChoice + " Beats " + computerChoice + " everytime! " + "<br>"
@@ -52,9 +52,9 @@ let scoreCard = ""
     }
 
 }
-else if ((playerChoice == 'rock' && computerChoice  == 'paper') ||
-        (playerChoice == 'scissors' && computerChoice  == 'rock') ||
-        (playerChoice == 'paper' && computerChoice == 'scissors')){
+else if ((playerChoice == 'Rock' && computerChoice  == 'Paper') ||
+        (playerChoice == 'Scissors' && computerChoice  == 'Rock') ||
+        (playerChoice == 'Paper' && computerChoice == 'Scissors')){
 
           computerScore += 1
 
