@@ -37,7 +37,7 @@ let computerChoice = computerPlay();
 
 let scoreCard = ""
 
-  if((playerChoice  == 'Rock' && computerChoice == 'Scissors')||
+  if((playerChoice  == document.getElementById('') && computerChoice == 'Scissors')||
       (playerChoice == 'Scissors' && computerChoice == 'Paper')||
       (playerChoice == 'Paper' && computerChoice == 'Rock'))
   {
