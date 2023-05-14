@@ -12,7 +12,9 @@ function disableButtons() {
 // Allows the computer to randomly Choose between Rock, Paper, or Scissors
 function computerPlay() {
     let choices = ['rock', 'paper', 'scissors']
-    return choices[Math.floor(Math.random() * choices.length)]
+    let choice =  choices[Math.floor(Math.random() * choices.length)]
+    
+    return choice;
 }
 
 
@@ -37,9 +39,9 @@ let computerChoice = computerPlay();
 
 let scoreCard = ""
 
-  if((playerChoice  == document.getElementById('Rock') && computerChoice == )||
-      (playerChoice == document.getElementById('Scissors') && computerChoice == 'Paper')||
-      (playerChoice == document.getElementById('Paper') && computerChoice == 'Rock'))
+  if((playerChoice  == document.getElementById('Rock') && computerChoice == 'scissors' )||
+      (playerChoice == document.getElementById('Scissors') && computerChoice == 'paper')||
+      (playerChoice == document.getElementById('Paper') && computerChoice == 'rock'))
   {
     playerScore += 1;
     scoreCard = (" You Win Congrats! " + playerChoice + " Beats " + computerChoice + " everytime! " + "<br>"
@@ -52,9 +54,9 @@ let scoreCard = ""
     }
 
 }
-else if ((playerChoice == 'Rock' && computerChoice  == 'Paper') ||
-        (playerChoice == 'Scissors' && computerChoice  == 'Rock') ||
-        (playerChoice == 'Paper' && computerChoice == 'Scissors')){
+else if ((playerChoice == 'Rock' && computerChoice  == 'paper') ||
+        (playerChoice == 'Scissors' && computerChoice  == 'rock') ||
+        (playerChoice == 'Paper' && computerChoice == 'scissors')){
 
           computerScore += 1
 
