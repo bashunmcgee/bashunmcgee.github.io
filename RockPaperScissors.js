@@ -37,9 +37,9 @@ let computerChoice = computerPlay();
 
 let scoreCard = ""
 
-  if((playerChoice  == document.getElementById('') && computerChoice == 'Scissors')||
-      (playerChoice == 'Scissors' && computerChoice == 'Paper')||
-      (playerChoice == 'Paper' && computerChoice == 'Rock'))
+  if((playerChoice  == document.getElementById('Rock') && computerChoice == 'Scissors')||
+      (playerChoice == document.getElementById('Scissors') && computerChoice == 'Paper')||
+      (playerChoice == document.getElementById('Paper') && computerChoice == 'Rock'))
   {
     playerScore += 1;
     scoreCard = (" You Win Congrats! " + playerChoice + " Beats " + computerChoice + " everytime! " + "<br>"
