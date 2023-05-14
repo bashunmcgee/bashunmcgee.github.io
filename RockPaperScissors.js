@@ -12,9 +12,9 @@ function disableButtons() {
 // Allows the computer to randomly Choose between Rock, Paper, or Scissors
 function computerPlay() {
     let choices = ['rock', 'paper', 'scissors']
-    let choice =  choices[Math.floor(Math.random() * choices.length)]
+    return choices[Math.floor(Math.random() * choices.length)]
     
-    return choice;
+   
 }
 
 
