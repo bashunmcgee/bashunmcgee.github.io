@@ -27,9 +27,9 @@ function computerTurn(){
   
   const totalChoices = 3
   
-  let randomBotChoice = (Math.Floor(Math.random() * totalChoices)+ 1) ;
+   const randomNum = Math.Floor(Math.random() * totalChoices)+ 1 ;
   
-  switch(randomBotChoice){
+  switch(randomNum){
        
     case 1: 
       bot = 'Rock'
