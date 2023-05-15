@@ -1,6 +1,6 @@
 const playerText = document.querySelector('#playerText');
 const botText = document.querySelector('#botText');
-const resultText = document.querySelector('#resultText');
+const resultText = document.querySelector('#resultingText');
 const choicebttn = document.querySelectorAll('.choiceBttn');
 
  
