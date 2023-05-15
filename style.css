@@ -1,8 +1,8 @@
 #gameDiv{
     font-family: 'Brush Script MT', cursive;
-    border: 3px solid;
-    border-radius: 25px;
-    padding: 10px;
+    border: 5px solid;
+    border-radius: 30px;
+    padding: 15px;
     background-color: lightgreen;
     text-align: center;
 }
