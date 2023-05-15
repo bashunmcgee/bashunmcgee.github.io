@@ -52,13 +52,13 @@ function checkWinner(){
       return "Its a Tie No one Wins "
     }
     else if ( bot == 'Rock'){
-      return (player == 'Paper') ? "You Win ! Nice." : "You lose Bots Rule!";
+      return (player == 'Paper') ? "You Win ! Nice." : "You lose Bots Rule!"
     }
       else if ( bot == 'Paper'){
-      return (player == 'Scissors') ? "You Win ! Nice." : "You lose Bots Rule!";
+      return (player == 'Scissors') ? "You Win ! Nice." : "You lose Bots Rule!"
       }
       else if ( bot == 'Scissors'){
-      return (player == 'Rock') ? "You Win ! Nice." : "You lose Bots Rule!";
+      return (player == 'Rock') ? "You Win ! Nice." : "You lose Bots Rule!"
       }
 
   }
